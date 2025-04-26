@@ -22,7 +22,7 @@ def calculateMassCombinations(eta, phi, pt):
     return masses
 
 def binEvents(bin_start, bin_end, bin_size, file_name):
-    with open(f'Diphotons{file_name}.dat', 'r') as file:
+    with open(file_name, 'r') as file:
         bin_number = (bin_end - bin_start) // bin_size
         bin = [0 for i in range(bin_number)]
 
